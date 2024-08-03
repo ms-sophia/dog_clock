@@ -36,11 +36,11 @@
                     THIS IS THE TIMER <br>
                     <span>Timer goes here</span>
                 </h2>
-                <div class="timer_circle" id="timer">15:00</div>
+                <div class="timer_circle" id="timer">60</div>
                 <div class="control_buttons">
-                    <button onclick="togglePauseResume()">Pause</button>
-                    <button onclick="restartTimer()">Reset</button>
-                    <button onclick="chooseTime()">Choose Time</button>
+                    <button id="startBtn" onclick="startTimer()">Start</button>
+                    <button id="pauseResumeBtn" onclick="togglePauseResume()">Pause</button>
+                    <button id="resetBtn" onclick="restartTimer()">Reset</button>
                 </div>
             </div>
         </div>
