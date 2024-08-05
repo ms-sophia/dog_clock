@@ -26,7 +26,6 @@ function updateTimer() {
     timerElement.textContent = formatTime(minutes, seconds);
     
     // changing gif function
-    gifChanger(minutes);
 
     if (minutes === 0 && seconds === 0)
     {
@@ -70,6 +69,7 @@ function togglePauseResume()
 }
 
 
+gifChanger(minutes);
 
 showCurrentTime();
 
