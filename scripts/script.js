@@ -1,7 +1,7 @@
 // let minutes = 60;
 let timer;
 let isPaused = false;
-let minutes = 1;
+let minutes = 60;
 let seconds = 0;
 let pauseResumeBtn = document.querySelector('#pauseResumeBtn');
 
