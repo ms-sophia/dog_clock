@@ -1,7 +1,7 @@
 // let minutes = 60;
 let timer;
 let isPaused = false;
-let minutes = 60;
+let minutes = 1;
 let seconds = 0;
 let pauseResumeBtn = document.querySelector('#pauseResumeBtn');
 
@@ -29,9 +29,8 @@ function updateTimer() {
 
     if (minutes === 0 && seconds === 0)
     {
-        clearInterval(timer);
-        // // alert('Time is up! Take a break');
-        // timerElement.textContent = formatTime(minutes,seconds);
+        restartTimer()
+    
     }
     else if(!isPaused) {
         if (seconds > 0)
