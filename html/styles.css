@@ -11,7 +11,7 @@ body {
 }
 
 h1{
-  font:80px'Bungee Shade',cursive, Helvetica, Arial, sans-serif;
+  font:90px'Righteous',cursive, Helvetica, Arial, sans-serif;
   color: #5d5491;
   margin: 0px;
   padding: 0px;
@@ -46,7 +46,7 @@ h2 #clock{
   background-color: #5d5491;
   width:300px;
   height:300px;
-  font: 30px'Bungee';
+  font: 50px'Bungee';
   margin:20px auto;
   color:#ffd230;
   align-items:center;
@@ -55,9 +55,9 @@ h2 #clock{
 }
 
 blockquote{
-  font: 20px 'Open Sans', sans-serif;
-  -webkit-text-stroke: 1px black;
-  text-shadow: 2px 2px #000;
+  font: 20px 'Bungee', sans-serif;
+  -webkit-text-stroke: 0.5px black;
+  text-shadow: 1px 2px #000;
   margin: -40px 0 100px 0;
   color: #fff;
 }
@@ -76,4 +76,8 @@ blockquote{
   background-color: #fff9c7;
   color:#F6D110;
   transition: background-color 0.3s;
+}
+
+span{
+  font-size: 25px;
 }
