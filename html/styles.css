@@ -47,7 +47,7 @@ h2 #clock{
   width:300px;
   height:300px;
   font: 50px'Bungee';
-  margin:20px auto;
+  margin: auto;
   color:#ffd230;
   align-items:center;
   display:flex;
@@ -58,11 +58,11 @@ blockquote{
   font: 20px 'Bungee', sans-serif;
   -webkit-text-stroke: 0.5px black;
   text-shadow: 1px 2px #000;
-  margin: -40px 0 100px 0;
-  color: #fff;
+  margin: -10% 0 0 0;
+  color: #ffff;
 }
 
-.control_buttons button{
+/* .control_buttons button{
   background-color: #5d5491;
   color:#fff;
   border: none;
@@ -70,9 +70,26 @@ blockquote{
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
+} */
+
+/* .control_buttons button:hover{
+  background-color: #fff9c7;
+  color:#F6D110;
+  transition: background-color 0.3s;
+} */
+
+button{
+  background-color: #5d5491;
+  color:#fff;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin:10% auto;
 }
 
-.control_buttons button:hover{
+button:hover{
   background-color: #fff9c7;
   color:#F6D110;
   transition: background-color 0.3s;

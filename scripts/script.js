@@ -3,6 +3,7 @@ let timer;
 let isPaused = false;
 let minutes = 60;
 let seconds = 0;
+let hours = 9;
 let pauseResumeBtn = document.querySelector('#pauseResumeBtn');
 
 function restartTimer()
@@ -27,7 +28,7 @@ function updateTimer() {
     
     // changing gif function
 
-    if (minutes === 0 && seconds === 0)
+    if (hours === 0 && minutes === 0 && seconds === 0)
     {
         clearInterval(timer);
         // // alert('Time is up! Take a break');
@@ -46,9 +47,9 @@ function updateTimer() {
     }
 }
 
-function formatTime(minutes, seconds)
+function formatTime(hours,minutes, seconds)
 {
-    return (`${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`); 
+    return (`${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`); 
 
 }
 
@@ -73,7 +74,6 @@ gifChanger(minutes);
 
 showCurrentTime();
 
-// startTimer();
 // ------------THIS IS FOR CLOCK---------------------//
 
 function gifChanger(minutes)
@@ -87,22 +87,27 @@ function gifChanger(minutes)
     if (minutes === 0)
     {
         image = "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZm1teDUyYWxkcjVsZTdpaG1semZ1Z3JvdHplaW4zY2Jnamh2aTRieSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/r3bL7nHJPAznO/giphy.gif"
-        messageText = "You are Free!!!"
+        messageText = "You are Free Mode!!!"
     }
     else if (minutes < 15)
     {
         image = image = "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZml1dnp6Mm5ldzFxcXUyaDZhbXZ4b2EycWI5Nm96d2FjZTVsaTNraCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Pv3GlvjHv1T1u/giphy.gif"
-        messageText =  "Work betch"
+        messageText =  "Work Mode Bruh"
     }
     else if (minutes < 30)
     {
         image = "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW51ODNkdHFnOXlyc2k3NmUydGNxOTA4ajFuNnM4NmxjaDk4MGliMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/bswGDO7Rh1ONO/giphy.gif"
-        messageText = "Break time!!!!!"
+        messageText = "Break Mode!!!!!"
     }
-    else
+    else if (minutes < 60)
     {
         image = "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbWY1czFoMnl0N2xjNHZobHlxMm02amVnZ3R1eTlweXMxOHlrajI3ciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XdPCms1PVHESm8XR9c/giphy.gif"
         messageText = "Wurk Mode"
+    }
+    else
+    {
+        image = "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHJybzJqdzY1dG82YjJ1NHV4bWsxdWphem5tdmoybDJ6Z2Nhamt0cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gKHGnB1ml0moQdjhEJ/giphy.gif"
+        messageText = "No Mode"
     }
 
 

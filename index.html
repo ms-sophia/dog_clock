@@ -34,17 +34,21 @@
                     src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHJybzJqdzY1dG82YjJ1NHV4bWsxdWphem5tdmoybDJ6Z2Nhamt0cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gKHGnB1ml0moQdjhEJ/giphy.gif"
                     alt="imgDoggie">
                 <blockquote id="timeEvent">This is where time events are reported</blockquote>
+                <div class="time_dtr_button">
+                    <button type="button" id="timeInBtn" onclick="timeIn()">Time In</button>
+                    <button type="button" id="timeOutBtn" onclick="timeOut()">Time Out</button>
+                </div>
             </div>
             <div class="time_grid_item">
                 <h2>
                     FOCUS TIMER <br>
-                    <span>go and focus bruh</span>
+                    <span id="focusEvent">go and focus</span>
                 </h2>
-                <div class="timer_circle" id="timer">60:00</div>
+                <div class="timer_circle" id="timer">09:00:00</div>
                 <div class="control_buttons">
-                    <button id="startBtn" onclick="startTimer()">Start</button>
-                    <button id="pauseResumeBtn" onclick="togglePauseResume()">Pause</button>
-                    <button id="resetBtn" onclick="restartTimer()">Reset</button>
+                    <button type="button" id="startBtn" onclick="startTimer()">Start</button>
+                    <button type="button" id="pauseResumeBtn" onclick="togglePauseResume()">Pause</button>
+                    <button type="button" id="resetBtn" onclick="restartTimer()">Reset</button>
                 </div>
             </div>
         </div>
