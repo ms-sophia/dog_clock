@@ -10,22 +10,12 @@ body {
   border-radius: 5px;
 }
 
-h1{
-  font:90px'Righteous',cursive, Helvetica, Arial, sans-serif;
-  color: #5d5491;
-  margin: 0px;
-  padding: 0px;
-  text-transform: uppercase;
-}
-
-h2{
-  font: 20px'Bungee',cursive;
+h1 #clock{
+  font:80px'Bungee', Helvetica, Arial, sans-serif;
   color:#5d5491;
+  padding: 10px;
+  margin: 20px auto;
 }
-h2 #clock{
-  font-size: 30px;
-}
-
 
 #dog_img{
   width:300px;
@@ -58,35 +48,30 @@ blockquote{
   font: 20px 'Bungee', sans-serif;
   -webkit-text-stroke: 0.5px black;
   text-shadow: 1px 2px #000;
-  margin: -10% 0 0 0;
+  margin: -15% 0 0 0;
   color: #ffff;
 }
 
-/* .control_buttons button{
+.control_buttons button{
   background-color: #5d5491;
   color:#fff;
   border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-} */
-
-/* .control_buttons button:hover{
-  background-color: #fff9c7;
-  color:#F6D110;
-  transition: background-color 0.3s;
-} */
-
-button{
-  background-color: #5d5491;
-  color:#fff;
-  border: none;
-  padding: 10px 40px;
+  padding: 10px 30px;
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
   margin:10% auto;
+}
+
+.time_dtr_button button{
+  background-color: #5d5491;
+  color:#fff;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin:2% auto;
 }
 
 button:hover{

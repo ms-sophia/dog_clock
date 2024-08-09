@@ -15,35 +15,35 @@
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
 
+
+
     <link rel="stylesheet" type="text/css" href="html/styles.css">
 </head>
 
 <body>
     <div class="page">
         <header>
-            <h1> DOGGIE CLOCK</h1>
+            <!-- <h1> DOGGIE CLOCK</h1> -->
+            <h1>
+                <!-- THIS IS TIME <br> -->
+                <span id="clock">Clocks goes here</span>
+            </h1>
         </header>
-
+        <div class="time_dtr_button">
+            <button type="button" id="timeInBtn" onclick="timeIn()">Time In</button>
+            <!-- todo: create the timeout as the output for timeIn + current time when it was clicked -->
+            <button type="" id="timeOutBtn" onclick="timeOut()">Time Out</button>
+        </div>
         <div class="time_grid_containers">
             <div class="time_grid_item">
-                <h2>
-                    THIS IS TIME <br>
-                    <span id="clock">Clocks goes here</span>
-                </h2>
+
                 <img id="dog_img"
                     src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHJybzJqdzY1dG82YjJ1NHV4bWsxdWphem5tdmoybDJ6Z2Nhamt0cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gKHGnB1ml0moQdjhEJ/giphy.gif"
                     alt="imgDoggie">
                 <blockquote id="timeEvent">This is where time events are reported</blockquote>
-                <div class="time_dtr_button">
-                    <button type="button" id="timeInBtn" onclick="timeIn()">Time In</button>
-                    <button type="button" id="timeOutBtn" onclick="timeOut()">Time Out</button>
-                </div>
+
             </div>
             <div class="time_grid_item">
-                <h2>
-                    FOCUS TIMER <br>
-                    <span id="focusEvent">go and focus</span>
-                </h2>
                 <div class="timer_circle" id="timer">09:00:00</div>
                 <div class="control_buttons">
                     <button type="button" id="startBtn" onclick="startTimer()">Start</button>
